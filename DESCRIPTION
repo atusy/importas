@@ -1,0 +1,25 @@
+Package: pkgas
+Type: Package
+Title: Abbreviate Packages Like Python
+Version: 0.1.0
+Author: Atsushi Yasumoto [aut, cph, cre] (<https://orcid.org/0000-0002-8335-495X>)
+Authors@R: c(
+        person(
+            given = "Atsushi", family = "Yasumoto",
+            role = c("aut", "cph", "cre"),
+            email = "atusy.rpkg@gmail.com",
+            comment = c(ORCID = "0000-0002-8335-495X")
+        )
+    )
+Maintainer: Atsushi Yasumoto <atusy.rpkg@gmail.com>
+Description:
+    Get objects from packages via abbreviations of packages and the $ operator.
+URL: https://github.com/atusy/pkgas
+BugReports: https://github.com/atusy/felp/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.1
+Language: en-US
+Suggests: 
+    testthat (>= 2.1.0)
