@@ -16,6 +16,9 @@ knitr::opts_chunk$set(
 # importas
 
 <!-- badges: start -->
+[![Travis build status](https://travis-ci.org/atusy/importas.svg?branch=master)](https://travis-ci.org/atusy/importas)
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/atusy/importas?branch=master&svg=true)](https://ci.appveyor.com/project/atusy/importas)
+[![Codecov test coverage](https://codecov.io/gh/atusy/importas/branch/master/graph/badge.svg)](https://codecov.io/gh/atusy/importas?branch=master)
 <!-- badges: end -->
 
 Get objects from packages via aliases of packages and the $ operator.
@@ -30,7 +33,7 @@ remotes::install_github("atusy/pkgas")
 ## Example
 
 ```{r}
-library(pkgas)
+library(importas)
 
 # Define an alias of a package, 
 # and access the object from the package via the alias
@@ -38,7 +41,7 @@ graphics %as% gr
 gr$plot
 
 # Define aliases at once
-importas(utils = ut, stats = st)
+importas(ut = utils, st = stats)
 ut$data
 st$median
 ```
