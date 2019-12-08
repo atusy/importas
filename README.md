@@ -20,7 +20,7 @@ spam as ham`
 ## Installation
 
 ``` r
-remotes::install_github("atusy/pkgas")
+remotes::install_github("atusy/importas")
 ```
 
 ## Example
@@ -34,7 +34,7 @@ graphics %as% gr
 gr$plot
 #> function (x, y, ...) 
 #> UseMethod("plot")
-#> <bytecode: 0x55e46e4adfb0>
+#> <bytecode: 0x5619994cafb0>
 #> <environment: namespace:graphics>
 
 # Define aliases at once
@@ -219,11 +219,11 @@ ut$data
 #>     }
 #>     invisible(names)
 #> }
-#> <bytecode: 0x55e46ed733b0>
+#> <bytecode: 0x561999d903b0>
 #> <environment: namespace:utils>
 st$median
 #> function (x, na.rm = FALSE, ...) 
 #> UseMethod("median")
-#> <bytecode: 0x55e46e42ce28>
+#> <bytecode: 0x561999449e28>
 #> <environment: namespace:stats>
 ```
