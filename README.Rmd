@@ -43,6 +43,6 @@ gr$plot
 
 # Define aliases at once
 importas(ut = utils, st = stats)
-ut$data
+ut$str
 st$median
 ```
