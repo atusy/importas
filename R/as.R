@@ -1,5 +1,4 @@
-#' Abbreviate a package
-#'
+#' @rdname importas
 #' @param pkg A name of package
 #' @param nm An abbreviated name of the package
 #'
