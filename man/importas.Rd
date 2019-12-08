@@ -4,7 +4,7 @@
 \alias{\%as\%}
 \alias{as}
 \alias{importas}
-\title{Define aliase(s) to packge(s)}
+\title{Define alias(es) to package(s)}
 \usage{
 pkg \%as\% nm
 
@@ -20,7 +20,7 @@ importas(..., .envir = parent.frame())
 \item{.envir}{An environment where to assign aliases.}
 }
 \description{
-\code{\%as\%} infix operator defines a aliase to a package.
+\code{\%as\%} infix operator defines an alias to a package.
 In order to define aliases for multiple packages at once, use \code{importas()}.
 }
 \examples{

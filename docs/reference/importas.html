@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Define aliase(s) to packge(s) — %as% • importas</title>
+<title>Define alias(es) to package(s) — %as% • importas</title>
 
 
 <!-- jquery -->
@@ -35,8 +35,8 @@
 
 
 
-<meta property="og:title" content="Define aliase(s) to packge(s) — %as%" />
-<meta property="og:description" content="%as% infix operator defines a aliase to a package.
+<meta property="og:title" content="Define alias(es) to package(s) — %as%" />
+<meta property="og:description" content="%as% infix operator defines an alias to a package.
 In order to define aliases for multiple packages at once, use importas()." />
 <meta name="twitter:card" content="summary" />
 
@@ -106,13 +106,13 @@ In order to define aliases for multiple packages at once, use importas()." />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Define aliase(s) to packge(s)</h1>
+    <h1>Define alias(es) to package(s)</h1>
     <small class="dont-index">Source: <a href='https://github.com/atusy/importas/blob/master/R/as.R'><code>R/as.R</code></a>, <a href='https://github.com/atusy/importas/blob/master/R/importas.R'><code>R/importas.R</code></a></small>
     <div class="hidden name"><code>importas.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p><code>%as%</code> infix operator defines a aliase to a package.
+    <p><code>%as%</code> infix operator defines an alias to a package.
 In order to define aliases for multiple packages at once, use <code>importas()</code>.</p>
     </div>
 
@@ -146,15 +146,15 @@ In order to define aliases for multiple packages at once, use <code>importas()</
     <pre class="examples"><div class='input'>  <span class='no'>graphics</span> <span class='kw'>%as%</span> <span class='no'>gr</span>
   <span class='no'>gr</span>$<span class='no'>plot</span></div><div class='output co'>#&gt; function (x, y, ...) 
 #&gt; UseMethod("plot")
-#&gt; &lt;bytecode: 0x56321ce94120&gt;
+#&gt; &lt;bytecode: 0x557f901c6120&gt;
 #&gt; &lt;environment: namespace:graphics&gt;</div><div class='input'>
   <span class='fu'>importas</span>(<span class='kw'>gr</span> <span class='kw'>=</span> <span class='no'>graphics</span>, <span class='kw'>st</span> <span class='kw'>=</span> <span class='no'>stats</span>)
   <span class='no'>gr</span>$<span class='no'>plot</span></div><div class='output co'>#&gt; function (x, y, ...) 
 #&gt; UseMethod("plot")
-#&gt; &lt;bytecode: 0x56321ce94120&gt;
+#&gt; &lt;bytecode: 0x557f901c6120&gt;
 #&gt; &lt;environment: namespace:graphics&gt;</div><div class='input'>  <span class='no'>st</span>$<span class='no'>median</span></div><div class='output co'>#&gt; function (x, na.rm = FALSE, ...) 
 #&gt; UseMethod("median")
-#&gt; &lt;bytecode: 0x56321daad070&gt;
+#&gt; &lt;bytecode: 0x557f90ddf070&gt;
 #&gt; &lt;environment: namespace:stats&gt;</div><div class='input'>
 </div></pre>
   </div>

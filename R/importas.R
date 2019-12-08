@@ -1,6 +1,6 @@
-#' Define aliase(s) to packge(s)
+#' Define alias(es) to package(s)
 #'
-#' `%as%` infix operator defines a aliase to a package.
+#' `%as%` infix operator defines an alias to a package.
 #' In order to define aliases for multiple packages at once, use `importas()`.
 #'
 #' @param ... Named arguments whose name is an alias to the value, i.e. package.
