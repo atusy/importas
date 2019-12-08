@@ -13,13 +13,13 @@ knitr::opts_chunk$set(
 )
 ```
 
-# pkgas
+# importas
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-Get objects from packages via abbreviations of packages and the $ operator.
-The `%as%` operatoraAbbreviates a package.
+Get objects from packages via aliases of packages and the $ operator.
+The `%as%` infix operator works in the way similar to Python's `Import spam as ham`
 
 ## Installation
 
@@ -32,10 +32,13 @@ remotes::install_github("atusy/pkgas")
 ```{r}
 library(pkgas)
 
-# Abbreviate a package
+# Define an alias of a package, 
+# and access the object from the package via the alias
 graphics %as% gr
-
-# Get plot function from graphics package
-# The result is same as `graphics::plot`
 gr$plot
+
+# Define aliases at once
+importas(utils = ut, stats = st)
+ut$data
+st$median
 ```
