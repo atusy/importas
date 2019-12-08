@@ -27,3 +27,4 @@ Imports:
 Suggests: 
     testthat (>= 2.1.0),
     covr
+Language: en_US
