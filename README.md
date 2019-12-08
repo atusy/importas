@@ -29,6 +29,18 @@ graphics %as% gr
 gr$plot
 #> function (x, y, ...) 
 #> UseMethod("plot")
-#> <bytecode: 0x5555c55edfb0>
+#> <bytecode: 0x557e8fae0fb0>
 #> <environment: namespace:graphics>
+```
+
+``` r
+dplyr %as% dp
+dp$mutate.tbl_df
+#> function (.data, ...) 
+#> {
+#>     dots <- enquos(..., .named = TRUE)
+#>     mutate_impl(.data, dots, caller_env())
+#> }
+#> <bytecode: 0x557e90da5190>
+#> <environment: namespace:dplyr>
 ```
