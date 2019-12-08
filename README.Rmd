@@ -27,7 +27,7 @@ The `%as%` infix operator works in the way similar to Python's `Import spam as h
 ## Installation
 
 ``` r
-remotes::install_github("atusy/pkgas")
+remotes::install_github("atusy/importas")
 ```
 
 ## Example

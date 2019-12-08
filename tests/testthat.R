@@ -1,4 +1,4 @@
 library(testthat)
-library(pkgas)
+library(importas)
 
-test_check("pkgas")
+test_check("importas")
