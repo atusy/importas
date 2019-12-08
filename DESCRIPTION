@@ -1,6 +1,6 @@
-Package: pkgas
+Package: importas
 Type: Package
-Title: Abbreviate Packages Like Python
+Title: Define Aliases of Packages Like Python's Import As
 Version: 0.1.0
 Author: Atsushi Yasumoto [aut, cph, cre] (<https://orcid.org/0000-0002-8335-495X>)
 Authors@R: c(
@@ -13,13 +13,16 @@ Authors@R: c(
     )
 Maintainer: Atsushi Yasumoto <atusy.rpkg@gmail.com>
 Description:
-    Get objects from packages via abbreviations of packages and the $ operator.
-URL: https://github.com/atusy/pkgas
-BugReports: https://github.com/atusy/felp/issues
+    Get objects from packages via aliases of packages and the $ operator.
+URL: https://github.com/atusy/importas
+BugReports: https://github.com/atusy/importas/issues
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1
 Language: en-US
+Imports:
+    rlang,
+    purrr
 Suggests: 
     testthat (>= 2.1.0)
