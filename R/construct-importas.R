@@ -5,7 +5,7 @@
 construct_importas <- function(pkg) {
   exports <- getNamespaceExports(pkg)
   structure(
-    setNames(as.list(exports), exports),
+    structure(as.list(exports), names = exports),
     class = c("importas", "list"),
     package = pkg
   )
