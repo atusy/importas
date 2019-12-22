@@ -12,7 +12,6 @@
 #'   st$median
 #'
 #' @importFrom rlang enexprs is_named
-#' @importFrom purrr imap
 #' @export
 importas <- function(..., .envir = parent.frame()) {
   dots <- rlang::enexprs(...)
