@@ -15,8 +15,12 @@
 #' @importFrom purrr imap
 #' @export
 importas <- function(..., .envir = parent.frame()) {
-  pkgs <- lapply(rlang::enexprs(...), function(x) getNamespace(as.character(x)))
-  if (!rlang::is_named(pkgs)) stop("All arguments must be named")
-  purrr::imap(pkgs, ~ assign(.y, .x, .envir))
+  dots <- rlang::enexprs(...)
+  if (!rlang::is_named(dots)) stop("All arguments must be named.")
+  Map(
+    function(nm, pkg) assign(nm, construct_importas(pkg), .envir),
+    nm = names(dots),
+    pkg = as.character(dots)
+  )
   invisible(NULL)
 }
