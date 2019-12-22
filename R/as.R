@@ -9,9 +9,6 @@
 #' @aliases as
 #' @export
 `%as%` <- function(pkg, nm) {
-  assign(
-    deparse(substitute(nm)),
-    getNamespace(deparse(substitute(pkg))),
-    parent.frame()
-  )
+  pkg <- deparse(substitute(pkg))
+  assign(deparse(substitute(nm)), construct_importas(pkg), parent.frame())
 }
