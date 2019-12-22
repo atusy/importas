@@ -5,10 +5,8 @@
 
 <!-- badges: start -->
 
-[![Travis build
-status](https://travis-ci.org/atusy/importas.svg?branch=master)](https://travis-ci.org/atusy/importas)
-[![AppVeyor build
-status](https://ci.appveyor.com/api/projects/status/github/atusy/importas?branch=master&svg=true)](https://ci.appveyor.com/project/atusy/importas)
+[![R build
+status](https://github.com/atusy/importas/workflows/R-CMD-check/badge.svg)](https://github.com/atusy/importas)
 [![Codecov test
 coverage](https://codecov.io/gh/atusy/importas/branch/master/graph/badge.svg)](https://codecov.io/gh/atusy/importas?branch=master)
 [![Netlify
@@ -36,7 +34,7 @@ graphics %as% gr
 gr$plot
 #> function (x, y, ...) 
 #> UseMethod("plot")
-#> <bytecode: 0x562979375fb0>
+#> <bytecode: 0x55a25a19cfc0>
 #> <environment: namespace:graphics>
 
 # Define aliases at once
@@ -44,11 +42,11 @@ importas(ut = utils, st = stats)
 ut$str
 #> function (object, ...) 
 #> UseMethod("str")
-#> <bytecode: 0x562978844a88>
+#> <bytecode: 0x55a25966ba98>
 #> <environment: namespace:utils>
 st$median
 #> function (x, na.rm = FALSE, ...) 
 #> UseMethod("median")
-#> <bytecode: 0x5629792f4e28>
+#> <bytecode: 0x55a25a11be38>
 #> <environment: namespace:stats>
 ```
