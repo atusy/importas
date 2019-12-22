@@ -16,8 +16,7 @@ knitr::opts_chunk$set(
 # importas
 
 <!-- badges: start -->
-[![Travis build status](https://travis-ci.org/atusy/importas.svg?branch=master)](https://travis-ci.org/atusy/importas)
-[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/atusy/importas?branch=master&svg=true)](https://ci.appveyor.com/project/atusy/importas)
+[![R build status](https://github.com/atusy/importas/workflows/R-CMD-check/badge.svg)](https://github.com/atusy/importas)
 [![Codecov test coverage](https://codecov.io/gh/atusy/importas/branch/master/graph/badge.svg)](https://codecov.io/gh/atusy/importas?branch=master)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8604d4c3-52cf-4be2-b434-ef08bc394150/deploy-status)](https://app.netlify.com/sites/importas/deploys)
 <!-- badges: end -->

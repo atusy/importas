@@ -3,12 +3,11 @@
 \.Rprofile
 ^docs$
 ^pkgdown$
-^\.travis\.yml$
 ^codecov\.yml$
-^appveyor\.yml$
 ^cran-comments.md
 ^LICENSE\.md$
 ^CRAN-RELEASE$
 ^README\.Rmd$
 ^_pkgdown\.yml$
 ^_redirects$
+^\.github/workflows/R-CMD-check\.yaml$
