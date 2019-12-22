@@ -15,6 +15,10 @@
 
 - A print method for the `improtas` class object lists all the exported objects
   from a package.
+  
+## Internal changes
+
+- No longer depends on purrr
 
 # importas 0.1.0
 
