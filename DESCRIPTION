@@ -1,7 +1,7 @@
 Package: importas
 Type: Package
 Title: Define Aliases of Packages Like Python's Import As
-Version: 0.1.0
+Version: 0.2.0
 Author: Atsushi Yasumoto [aut, cph, cre] (<https://orcid.org/0000-0002-8335-495X>)
 Authors@R: c(
         person(
