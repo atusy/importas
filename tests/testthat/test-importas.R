@@ -3,3 +3,7 @@ test_that("Define aliases at once", {
   expect_identical(gr$plot, graphics::plot)
   expect_identical(st$median, stats::median)
 })
+
+test_that("Error if missing alias(es)", {
+  expect_error(importas(foo))
+})
