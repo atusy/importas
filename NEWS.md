@@ -19,6 +19,7 @@
 ## Internal changes
 
 - No longer depends on purrr
+- Use GitHub Actions for CI instead of TravisCI and appveyor
 
 # importas 0.1.0
 
