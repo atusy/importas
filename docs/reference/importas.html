@@ -70,7 +70,7 @@ In order to define aliases for multiple packages at once, use importas()." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">importas</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.0</span>
       </span>
     </div>
 
@@ -90,12 +90,7 @@ In order to define aliases for multiple packages at once, use importas()." />
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li>
-  <a href="https://github.com/atusy/importas">
-    <span class="fab fa fab fa-github fa-lg"></span>
-     
-  </a>
-</li>
+        
       </ul>
       
     </div><!--/.nav-collapse -->
@@ -110,7 +105,7 @@ In order to define aliases for multiple packages at once, use importas()." />
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Define alias(es) to package(s)</h1>
-    <small class="dont-index">Source: <a href='https://github.com/atusy/importas/blob/master/R/as.R'><code>R/as.R</code></a>, <a href='https://github.com/atusy/importas/blob/master/R/importas.R'><code>R/importas.R</code></a></small>
+    
     <div class="hidden name"><code>importas.Rd</code></div>
     </div>
 
@@ -149,15 +144,15 @@ In order to define aliases for multiple packages at once, use <code>importas()</
     <pre class="examples"><div class='input'>  <span class='no'>graphics</span> <span class='kw'>%as%</span> <span class='no'>gr</span>
   <span class='no'>gr</span>$<span class='no'>plot</span></div><div class='output co'>#&gt; function (x, y, ...) 
 #&gt; UseMethod("plot")
-#&gt; &lt;bytecode: 0x556d44f41120&gt;
+#&gt; &lt;bytecode: 0x563f82a6f120&gt;
 #&gt; &lt;environment: namespace:graphics&gt;</div><div class='input'>
   <span class='fu'>importas</span>(<span class='kw'>gr</span> <span class='kw'>=</span> <span class='no'>graphics</span>, <span class='kw'>st</span> <span class='kw'>=</span> <span class='no'>stats</span>)
   <span class='no'>gr</span>$<span class='no'>plot</span></div><div class='output co'>#&gt; function (x, y, ...) 
 #&gt; UseMethod("plot")
-#&gt; &lt;bytecode: 0x556d44f41120&gt;
+#&gt; &lt;bytecode: 0x563f82a6f120&gt;
 #&gt; &lt;environment: namespace:graphics&gt;</div><div class='input'>  <span class='no'>st</span>$<span class='no'>median</span></div><div class='output co'>#&gt; function (x, na.rm = FALSE, ...) 
 #&gt; UseMethod("median")
-#&gt; &lt;bytecode: 0x556d45b5a070&gt;
+#&gt; &lt;bytecode: 0x563f83688070&gt;
 #&gt; &lt;environment: namespace:stats&gt;</div><div class='input'>
 </div></pre>
   </div>

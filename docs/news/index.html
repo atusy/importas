@@ -67,7 +67,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">importas</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.0</span>
       </span>
     </div>
 
@@ -87,12 +87,7 @@
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li>
-  <a href="https://github.com/atusy/importas">
-    <span class="fab fa fab fa-github fa-lg"></span>
-     
-  </a>
-</li>
+        
       </ul>
       
     </div><!--/.nav-collapse -->
@@ -107,9 +102,38 @@
   <div class="col-md-9 contents">
     <div class="page-header">
       <h1>Changelog <small></small></h1>
-      <small>Source: <a href='https://github.com/atusy/importas/blob/master/NEWS.md'><code>NEWS.md</code></a></small>
+      
     </div>
 
+    <div id="importas-020" class="section level1">
+<h1 class="page-header">
+<a href="#importas-020" class="anchor"></a>importas 0.2.0</h1>
+<div id="breaking-changes" class="section level2">
+<h2 class="hasAnchor">
+<a href="#breaking-changes" class="anchor"></a>Breaking changes</h2>
+<ul>
+<li>Only exported objects can be extracted from aliases.</li>
+<li>Extracting a missing object from an alias causes error. The previous version returned <code>NULL</code>.</li>
+<li>
+<code><a href="../reference/importas.html">%as%</a></code> and <code><a href="../reference/importas.html">importas()</a></code> functions construct <code>importas</code> class objects. The <code>importas</code> class object is list of strings whose name and components are identical to names of exported objects from a package. Its attribute, “pkg”, infers whose alias the object is. Previously, the functions returned namespace objects.</li>
+</ul>
+</div>
+<div id="new-features" class="section level2">
+<h2 class="hasAnchor">
+<a href="#new-features" class="anchor"></a>New features</h2>
+<ul>
+<li>A print method for the <code>improtas</code> class object lists all the exported objects from a package.</li>
+</ul>
+</div>
+<div id="internal-changes" class="section level2">
+<h2 class="hasAnchor">
+<a href="#internal-changes" class="anchor"></a>Internal changes</h2>
+<ul>
+<li>No longer depends on purrr</li>
+<li>Use GitHub Actions for CI instead of TravisCI and appveyor</li>
+</ul>
+</div>
+</div>
     <div id="importas-010" class="section level1">
 <h1 class="page-header">
 <a href="#importas-010" class="anchor"></a>importas 0.1.0</h1>
@@ -121,6 +145,7 @@
     <div id="tocnav">
       <h2>Contents</h2>
       <ul class="nav nav-pills nav-stacked">
+        <li><a href="#importas-020">0.2.0</a></li>
         <li><a href="#importas-010">0.1.0</a></li>
       </ul>
     </div>
