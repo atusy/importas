@@ -20,7 +20,7 @@ importas(..., .envir = parent.frame())
 \item{.envir}{An environment where to assign aliases.}
 }
 \description{
-\code{\%as\%} infix operator defines an alias to a package.
+\verb{\%as\%} infix operator defines an alias to a package.
 In order to define aliases for multiple packages at once, use \code{importas()}.
 }
 \examples{

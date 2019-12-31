@@ -9,6 +9,5 @@
 #' @aliases as
 #' @export
 `%as%` <- function(pkg, nm) {
-  pkg <- deparse(substitute(pkg))
-  assign(deparse(substitute(nm)), construct_importas(pkg), parent.frame())
+  invisible(assign_alias(deparse(substitute(nm)), deparse(substitute(pkg))))
 }

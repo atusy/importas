@@ -16,10 +16,6 @@
 importas <- function(..., .envir = parent.frame()) {
   dots <- rlang::enexprs(...)
   if (!rlang::is_named(dots)) stop("All arguments must be named.")
-  Map(
-    function(nm, pkg) assign(nm, construct_importas(pkg), .envir),
-    nm = names(dots),
-    pkg = as.character(dots)
-  )
+  Map(assign_alias, nm = names(dots), pkg = as.character(dots))
   invisible(NULL)
 }
