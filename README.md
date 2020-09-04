@@ -34,19 +34,22 @@ graphics %as% gr
 gr$plot
 #> function (x, y, ...) 
 #> UseMethod("plot")
-#> <bytecode: 0x55a25a19cfc0>
-#> <environment: namespace:graphics>
+#> <bytecode: 0x55ab7a951bc8>
+#> <environment: namespace:base>
+
+# A more R-like syntax is
+gr <- package(graphics)
 
 # Define aliases at once
 importas(ut = utils, st = stats)
 ut$str
 #> function (object, ...) 
 #> UseMethod("str")
-#> <bytecode: 0x55a25966ba98>
+#> <bytecode: 0x55ab7b075ae0>
 #> <environment: namespace:utils>
 st$median
 #> function (x, na.rm = FALSE, ...) 
 #> UseMethod("median")
-#> <bytecode: 0x55a25a11be38>
+#> <bytecode: 0x55ab7bb5b920>
 #> <environment: namespace:stats>
 ```

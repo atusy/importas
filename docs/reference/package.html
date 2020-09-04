@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Define alias(es) to package(s) — %as% • importas</title>
+<title>Import a package — package • importas</title>
 
 
 <!-- jquery -->
@@ -39,9 +39,8 @@
 
 
 
-<meta property="og:title" content="Define alias(es) to package(s) — %as%" />
-<meta property="og:description" content="%as% infix operator defines an alias to a package.
-In order to define aliases for multiple packages at once, use importas()." />
+<meta property="og:title" content="Import a package — package" />
+<meta property="og:description" content="Import a package" />
 
 
 
@@ -112,54 +111,31 @@ In order to define aliases for multiple packages at once, use importas()." />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Define alias(es) to package(s)</h1>
-    <small class="dont-index">Source: <a href='https://github.com/atusy/importas/blob/master/R/as.R'><code>R/as.R</code></a>, <a href='https://github.com/atusy/importas/blob/master/R/importas.R'><code>R/importas.R</code></a></small>
-    <div class="hidden name"><code>importas.Rd</code></div>
+    <h1>Import a package</h1>
+    <small class="dont-index">Source: <a href='https://github.com/atusy/importas/blob/master/R/construct-importas.R'><code>R/construct-importas.R</code></a></small>
+    <div class="hidden name"><code>package.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p><code>%as%</code> infix operator defines an alias to a package.
-In order to define aliases for multiple packages at once, use <code>importas()</code>.</p>
+    <p>Import a package</p>
     </div>
 
-    <pre class="usage"><span class='no'>pkg</span> <span class='kw'>%as%</span> <span class='no'>nm</span>
-
-<span class='fu'>importas</span>(<span class='no'>...</span>)</pre>
+    <pre class="usage"><span class='fu'>package</span>(<span class='no'>pkg</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>pkg</th>
-      <td><p>A name of package</p></td>
-    </tr>
-    <tr>
-      <th>nm</th>
-      <td><p>An abbreviated name of the package</p></td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td><p>Named arguments whose name is an alias to the value, i.e. package.</p></td>
+      <td><p>A package's name</p></td>
     </tr>
     </table>
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p><code>NULL</code></p>
+    <p>An <code>importas</code>-class object. It is a list of <code>NULL</code>s whose names
+correspond to those of exported objects from a specified package.</p>
 
-    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='no'>graphics</span> <span class='kw'>%as%</span> <span class='no'>gr</span>
-<span class='no'>gr</span>$<span class='no'>plot</span></div><div class='output co'>#&gt; function (x, y, ...) 
-#&gt; UseMethod("plot")
-#&gt; &lt;bytecode: 0x55d896361268&gt;
-#&gt; &lt;environment: namespace:base&gt;</div><div class='input'><span class='fu'>importas</span>(<span class='kw'>gr</span> <span class='kw'>=</span> <span class='no'>graphics</span>, <span class='kw'>st</span> <span class='kw'>=</span> <span class='no'>stats</span>)
-<span class='no'>gr</span>$<span class='no'>plot</span></div><div class='output co'>#&gt; function (x, y, ...) 
-#&gt; UseMethod("plot")
-#&gt; &lt;bytecode: 0x55d896361268&gt;
-#&gt; &lt;environment: namespace:base&gt;</div><div class='input'><span class='no'>st</span>$<span class='no'>median</span></div><div class='output co'>#&gt; function (x, na.rm = FALSE, ...) 
-#&gt; UseMethod("median")
-#&gt; &lt;bytecode: 0x55d8920be5e8&gt;
-#&gt; &lt;environment: namespace:stats&gt;</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

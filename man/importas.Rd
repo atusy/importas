@@ -2,13 +2,12 @@
 % Please edit documentation in R/as.R, R/importas.R
 \name{\%as\%}
 \alias{\%as\%}
-\alias{as}
 \alias{importas}
 \title{Define alias(es) to package(s)}
 \usage{
 pkg \%as\% nm
 
-importas(..., .envir = parent.frame())
+importas(...)
 }
 \arguments{
 \item{pkg}{A name of package}
@@ -16,19 +15,18 @@ importas(..., .envir = parent.frame())
 \item{nm}{An abbreviated name of the package}
 
 \item{...}{Named arguments whose name is an alias to the value, i.e. package.}
-
-\item{.envir}{An environment where to assign aliases.}
+}
+\value{
+\code{NULL}
 }
 \description{
 \verb{\%as\%} infix operator defines an alias to a package.
 In order to define aliases for multiple packages at once, use \code{importas()}.
 }
 \examples{
-  graphics \%as\% gr
-  gr$plot
-
-  importas(gr = graphics, st = stats)
-  gr$plot
-  st$median
-
+graphics \%as\% gr
+gr$plot
+importas(gr = graphics, st = stats)
+gr$plot
+st$median
 }
