@@ -8,7 +8,8 @@ construct_importas <- function(pkg) {
     vector("list", length(exports)),
     names = exports,
     class = c("importas", "list"),
-    package = pkg
+    package = pkg,
+    envir = as.environment(paste0("package:", pkg))
   )
 }
 

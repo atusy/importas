@@ -1,10 +1,4 @@
 #' @export
 `$.importas` <- function(x, name) {
-  do.call(
-    `::`,
-    list(
-      pkg = attr(x, "package", exact = TRUE),
-      name = substitute(name)
-    )
-  )
+  get(as.character(substitute(name)), envir = attr(x, "envir", exact = TRUE))
 }
