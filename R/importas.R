@@ -8,10 +8,9 @@
 #' @return `NULL`
 #'
 #' @examples
-#'   importas(gr = graphics, st = stats)
-#'   gr$plot
-#'   st$median
-#'
+#' importas(gr = graphics, st = stats)
+#' gr$plot
+#' st$median
 #' @importFrom rlang enexprs is_named
 #'
 #' @export
