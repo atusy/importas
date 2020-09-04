@@ -4,7 +4,6 @@
 #' In order to define aliases for multiple packages at once, use `importas()`.
 #'
 #' @param ... Named arguments whose name is an alias to the value, i.e. package.
-#' @param .envir An environment where to assign aliases.
 #'
 #' @examples
 #'   importas(gr = graphics, st = stats)
@@ -13,7 +12,7 @@
 #'
 #' @importFrom rlang enexprs is_named
 #' @export
-importas <- function(..., .envir = parent.frame()) {
+importas <- function(...) {
   dots <- rlang::enexprs(...)
   if (!rlang::is_named(dots)) stop("All arguments must be named.")
   Map(assign_alias, nm = names(dots), pkg = as.character(dots))
