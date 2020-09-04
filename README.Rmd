@@ -40,6 +40,9 @@ library(importas)
 graphics %as% gr
 gr$plot
 
+# A more R-like syntax is
+gr <- package(graphics)
+
 # Define aliases at once
 importas(ut = utils, st = stats)
 ut$str

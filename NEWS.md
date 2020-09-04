@@ -5,16 +5,16 @@
 - Only exported objects can be extracted from aliases.
 - Extracting a missing object from an alias causes error. The previous version
   returned `NULL`.
-- `%as%` and `importas()` functions construct `importas` class objects. The
-  `importas` class object is list of strings whose name and components are
-  identical to names of exported objects from a package. Its attribute, "pkg",
-  infers whose alias the object is. Previously, the functions returned namespace
-  objects.
+- `%as%` and `importas()` functions construct `importas` class object(s) and
+  assign them to alias(es), whereas they return `NULL`. The `importas` class
+  object is a list `NULL`s whose names are the names of exported objects from a
+  package.
 
 ## New features
 
 - A print method for the `improtas` class object lists all the exported objects
   from a package.
+- `package` function provides more R-like syntax (e.g., `gg = package(ggplot2)`).
   
 ## Internal changes
 
