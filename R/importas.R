@@ -5,12 +5,15 @@
 #'
 #' @param ... Named arguments whose name is an alias to the value, i.e. package.
 #'
+#' @return `NULL`
+#'
 #' @examples
 #'   importas(gr = graphics, st = stats)
 #'   gr$plot
 #'   st$median
 #'
 #' @importFrom rlang enexprs is_named
+#'
 #' @export
 importas <- function(...) {
   dots <- rlang::enexprs(...)
