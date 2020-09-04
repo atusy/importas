@@ -1,9 +1,9 @@
 test_that("Define aliases at once", {
-  importas(gr = graphics, st = stats)
+  expect_null(importas(gr = graphics, st = stats))
   expect_identical(gr$plot, graphics::plot)
   expect_identical(st$median, stats::median)
 })
 
-test_that("Error if missing alias(es)", {
+test_that("Arguments must be named", {
   expect_error(importas(foo))
 })
