@@ -13,7 +13,7 @@ Authors@R: c(
 Maintainer: Atsushi Yasumoto <atusy.rpkg@gmail.com>
 Description:
     Get objects from packages via aliases of packages and the $ operator.
-URL: https://importas.atusy.net/
+URL: https://importas.atusy.net/, https://github.com/atusy/importas/
 BugReports: https://github.com/atusy/importas/issues
 License: MIT + file LICENSE
 Encoding: UTF-8
