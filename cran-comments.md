@@ -30,19 +30,9 @@
 
 ## R CMD check results
 
-0 errors | 0 warnings | 2 notes
+0 errors | 0 warnings | 1 notes
 
 * New submission
-* Found the following calls to attach():
-  File 'importas/R/zzz.R':
-    attach(NULL, name = "importas:alias")
-    See section 'Good practice' in '?attach'.
-
-The latter is an intended implementation based on a suggestion by CRAN long-time (08.12.2019).
-
-> Why not define these symbols in another environment that you attach to the searchpath instead?
-
-I did not have time to fix at that time.
 
 ## revdepcheck results
 
