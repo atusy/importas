@@ -1,4 +1,4 @@
 #' @export
 `$.importas` <- function(x, name) {
-  get(as.character(substitute(name)), envir = attr(x, "envir", exact = TRUE))
+  getExportedValue(attr(x, "package", exact = TRUE), substitute(name))
 }
