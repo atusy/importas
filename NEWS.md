@@ -1,3 +1,13 @@
+# importas 0.2.1
+
+## Major changes
+
+- Sort exported values by their names
+
+## Bug fixes
+
+- Aliases cannot be created if package is not attached.
+
 # importas 0.2.0
 
 ## Breaking changes
