@@ -3,7 +3,7 @@
 #' @param pkg A package's name as a string
 #' @noRd
 construct_importas <- function(pkg) {
-  exports <- getNamespaceExports(pkg)
+  exports <- sort(getNamespaceExports(pkg))
   structure(
     vector("list", length(exports)),
     names = exports,
